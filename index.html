@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Movie Information</title>
 </head>
+
 <body>
-    
+    <main>
+        <h1>Movie Information</h1>
+        <!--Buscador-->
+        <div class="content-inline">
+            <div class="search-inline">
+                <input class="search-inline--input" placeholder="Search movie for title" id="search">
+                <div class="container-button">
+                    <button type="button" class="search-button" id="btn">Search</button>
+                </div>
+
+            </div>
+        </div>
+        <!--Tarjeta-->
+        <div class="card">
+            <img src="/assets/img/quiz.jpeg" alt="" id="poster">
+            <h2 class="title" id="title"></h2>
+            <p id="plot"></p><br>
+            <span id="rated"></span>
+        </div>
+        <footer>
+            <p>Data provided by <a href="https://www.omdbapi.com" target="_blank">OMDb API</a>.</p>
+        </footer>
+    </main>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="/assets/js/api.js"></script>
+
 </html>
